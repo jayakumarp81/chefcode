@@ -17,5 +17,19 @@ Create a role and assign any two cookbooks to role and setup a 2 nodes assigned 
 Write a cookbook using install version of latest tomcat and deploy jenkins.war files into war.
 Write a 4 cookbooks php, mysql, apache and webapp respectively and map a dependency between them and install a sample web application.
 Write a cookbook to install git, wget, zip in RHEL and Ubuntu.
+
+package "wget" do 
+	action : install
+	end
+
+	package "zip" do 
+		action:install
+		end
+
+		git_client 'default' do
+		  action :install
+		  end
+
 Write a cookbook in which create a file using a string, but only if “/etc/passwd” exists
+
 Write a coobook to run a batch file that unzips and then moves files from one location to another.
