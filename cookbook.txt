@@ -1,0 +1,21 @@
+Write a cookbook using you can install apache http server in CentOs and Ubuntu, enable the services and start the service.
+
+
+package "http"
+
+service "http"
+	do 
+	action [:enable,:start]
+
+
+
+
+Write a recipe using template resources to create a file, but only if an attribute has a specific value.
+Write a recipe to create a file using a string, but not if “/etc/passwd” exists?
+Write a cookbook to unzip a file, and then move a files from one location to another using batch, bash chef resources?
+Create a role and assign any two cookbooks to role and setup a 2 nodes assigned to role and conerse the role.
+Write a cookbook using install version of latest tomcat and deploy jenkins.war files into war.
+Write a 4 cookbooks php, mysql, apache and webapp respectively and map a dependency between them and install a sample web application.
+Write a cookbook to install git, wget, zip in RHEL and Ubuntu.
+Write a cookbook in which create a file using a string, but only if “/etc/passwd” exists
+Write a coobook to run a batch file that unzips and then moves files from one location to another.
